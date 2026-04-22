@@ -22,10 +22,11 @@
             foreach (int i in lista)
             {
                 somma += i;
+               
 
             }
             media = somma / lista.Count;
-            Console.WriteLine("La media e: " + media);
+            Console.WriteLine("La media e: " + media + " e la somma e: " + somma);
         }
     }
 }
