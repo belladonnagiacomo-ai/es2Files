@@ -5,7 +5,6 @@
         static void Main(string[] args)
         {
             List<string> lista = new List<string>();
-            string file1 = "log.txt";
             string file2 = "log_sistema";
             string file3 = "allert.txt";
             using (StreamReader sr = new StreamReader(file2))
