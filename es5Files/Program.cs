@@ -18,11 +18,23 @@
                  }
             }
 
-            for (int i = lista.Count; i > 0; i++)
+            for (int i = lista.Count - 1; i > 0; i++)
             {
                 if (lista.Contains("CRITICAL"))
                 {
                     
+                }
+                else
+                {
+                    lista.RemoveAt(i);
+                }
+            }
+
+            using (StreamWriter sw =  new StreamWriter(file3))
+            {
+                for(int i = 0; i < lista.Count; i++)
+                {
+                    sw.WriteLine(lista[i]);
                 }
             }
 
